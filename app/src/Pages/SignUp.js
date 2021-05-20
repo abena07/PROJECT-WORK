@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import LogIn from "./LogIn"
 // import axios from axios;
 
 function SignUp(){
@@ -46,7 +47,7 @@ function SignUp(){
         <div>
           {signedin ? (
             <>
-              {/* <Login /> */}
+              <LogIn />
               <button onClick={handleSignedout}>Sign Out </button>
             </>
           ) : (
