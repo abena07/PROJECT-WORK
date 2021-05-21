@@ -4,6 +4,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+## Todo
+
+- Learn how to put the map in the web app
+- Learn how to use the API to search the API
+
+
 In the project directory, you can run:
 
 ### `npm start`
