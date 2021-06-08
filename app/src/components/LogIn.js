@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import Home from "./Home"
+import img from "../image/ug.jpg"
 
 function LogIn(){
 
@@ -66,6 +67,8 @@ function LogIn(){
               </div>
             </form>
           )}
+                    <img src ={img}  className ="center" alt ="ug"></img>
+
         </div>
       );
 }

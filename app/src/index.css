@@ -113,7 +113,14 @@ form .form-inner .form-group button:hover{
 }
 
 
-
+.center{
+  text-align: center;
+  display:block;
+  justify-content: right;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+}
 
 /* .welcome{
   width:100%;
