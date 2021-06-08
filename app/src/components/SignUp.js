@@ -3,21 +3,15 @@ import LogIn from "./LogIn"
 // import axios from axios;
 
 function SignUp(){
-    const [firstname, setFirstname] = useState("");
-    const [lastname, setLastname] = useState("");
+    
     const [studentID, setStudentID] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [confirmpswd, setConfirmpswd] = useState("");
     const [signedin, setSignedin] = useState(false);
+
   
-    const handleFirstnameInput = (event) => {
-      setFirstname(event.target.value);
-    };
-  
-    const handleLastnameInput = (event) => {
-      setLastname(event.target.value);
-    };
+   
   
     const handleStudentIdInput = (event) => {
       setStudentID(event.target.value);
@@ -36,42 +30,34 @@ function SignUp(){
     };
   
     const handleSignedin = (event) => {
-      event.preventDefault();
+      if (email === "abenabennett@gmail.com" && password === "0123" && confirmpswd==="0123" && studentID ==="10821976")
+        setSignedin(true);
+     
     }
 
     const handleSignedout = (event) => {
-        setSignedin(true);
+        setSignedin(false);
       };
 
       return (
         <div>
           {signedin ? (
             <>
-              <LogIn />
+              <LogIn/>
+
+              <div className="form-group">
               <button onClick={handleSignedout}>Sign Out </button>
+              </div>
+              
             </>
           ) : (
             <form>
               <div className="form-inner">
                 <h2>Sign Up</h2>
     
-                <div className="form-group">
-                  <label>First Name</label>
-                  <input
-                    type="name"
-                    value={firstname}
-                    onChange={handleFirstnameInput}
-                  ></input>
-                </div>
+               
     
-                <div className="form-group">
-                  <label>Last Name</label>
-                  <input
-                    type="name"
-                    value={lastname}
-                    onChange={handleLastnameInput}
-                  ></input>
-                </div>
+             
     
                 <div className="form-group">
                   <label>Student Id</label>

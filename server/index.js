@@ -27,7 +27,6 @@ mongoose
   });
 
 app.use(studentRouter);
-app.use(bookingRouter);
 
 // Middlewares
 /**

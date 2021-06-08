@@ -1,9 +1,9 @@
 import React, {useState} from "react";
+import Home from "./Home"
 
 function LogIn(){
 
     const [studentID, setStudentID] = useState("");
-    const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [loggedIn, setLoggedIn] = useState(false);
   
@@ -11,27 +11,27 @@ function LogIn(){
       setStudentID(event.target.value);
     };
   
-    const handleEmailInput = (event) => {
-      setEmail(event.target.value);
-    };
   
     const handlePasswordInput = (event) => {
       setPassword(event.target.value);
     };
   
     const handleLoggedIn = (event) => {
-      event.preventDefault();
+      if (studentID ==="10821976" && password === "0123")
+        setLoggedIn(true);
+      
     }
+  
 
       const handleLoggedout = (event) => {
-        setLoggedIn(true);
+        setLoggedIn(false);
       };
 
       return (
         <div>
           {loggedIn ? (
             <>
-              {/* <Booking /> */}
+              <Home/>
               <button onClick={handleLoggedout}>Log Out </button>
             </>
           ) : (
@@ -48,14 +48,7 @@ function LogIn(){
                   ></input>
                 </div>
     
-                <div className="form-group">
-                  <label>Email</label>
-                  <input
-                    type="email"
-                    value={email}
-                    onChange={handleEmailInput}
-                  ></input>
-                </div>
+             
     
                 <div className="form-group">
                   <label>Password</label>
