@@ -1,12 +1,13 @@
 import React from 'react'
+import img from "../image/ug.jpg"
 
 
 function Home() {
     return (
         <div>
-           <h1>sorry</h1> 
-    
            
+    
+           <img src ={img}  className ="center" alt ="ug" width="500"></img>
         </div>
     )
 }

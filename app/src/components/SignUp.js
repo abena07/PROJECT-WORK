@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import LogIn from "./LogIn"
+import img from "../image/ug.jpg"
 // import axios from axios;
 
 function SignUp(){
@@ -100,7 +101,10 @@ function SignUp(){
                 </div>
               </div>
             </form>
+
           )}
+          
+          <img src ={img}  className ="center" alt ="ug" width="500" height="535"></img>
         </div>
       );
 
