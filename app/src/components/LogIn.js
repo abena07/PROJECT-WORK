@@ -36,6 +36,7 @@ function LogIn(){
             </>
           ) : (
             <form>
+              
               <div className="form-inner">
                 <h2>Log In</h2>
     
@@ -48,7 +49,7 @@ function LogIn(){
                   ></input>
                 </div>
     
-             
+    
     
                 <div className="form-group">
                   <label>Password</label>
