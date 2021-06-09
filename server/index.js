@@ -50,3 +50,5 @@ app.use(studentRouter);
 app.listen(config.PORT, () =>
   console.log(`Express app is working on PORT: ${config.PORT}`)
 );
+
+// PORT=7000
