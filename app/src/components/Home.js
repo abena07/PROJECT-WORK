@@ -35,6 +35,9 @@ class Home extends React.Component {
         />
         </>
       );
+      <div className="images">
+        <img src="/image/assignment img.jpg" alt="assignment image"></img>
+      </div>
     }
 }
 
