@@ -2,6 +2,7 @@
   "name": "app",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:7000",
   "dependencies": {
     "@mapbox/mapbox-gl-directions": "^4.1.0",
     "@testing-library/jest-dom": "^5.12.0",

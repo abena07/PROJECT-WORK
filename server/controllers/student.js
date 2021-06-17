@@ -10,13 +10,10 @@ studentRouter.post("/signup", function (request, response) {
   const studentID = request.body.studentID;
   const password = request.body.password;
   const email = request.body.email;
-  const firstname = request.body.firstname;
-  const lastname = request.body.lastname;
   const confirmpswd = request.body.confirmpswd;
 
   const newStudent = new Student({
-    firstname: firstname,
-    lastname: lastname,
+  
     studentID: studentID,
     email: email,
     password: password,
@@ -40,10 +37,10 @@ studentRouter.post("/login", function (request, response, next) {
   console.log("loggin in");
   const studentID = request.body.studentID;
   const password = request.body.password;
-  const email = request.body.email;
+
 
   Student.findOne(
-    { studentID: studentID, password: password, email: email },
+    { studentID: studentID, password: password, },
     function (err, student) {
       if (err) {
         console.log(err);

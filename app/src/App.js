@@ -17,6 +17,7 @@ function App() {
       <NavBar/>
     <Switch>
         <Route path="/home" component={Home} />
+        {/* <Route path="/landing" component={Home} /> */}
         <Route path="/login" component={LogIn} />
         <Route path="/signup" component={SignUp} />
         <Route path="/about" component={AboutUs} />
