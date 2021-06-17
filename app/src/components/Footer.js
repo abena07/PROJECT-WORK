@@ -9,7 +9,7 @@ function Footer() {
           <div className="row">
             <div className="wrapper">
               {/* column 1 */}
-              <div className="col-md-4 col-sm-6">
+              <div className="col-md-3 col-sm-6">
                 <h4>Contact </h4>
                 <ul className="list-unstyled">
                   <li>
@@ -30,7 +30,7 @@ Legon, Accra</a>
               </div>
 
               {/* column 2*/}
-              <div className="col-md-4 col-sm-6">
+              <div className="col-md-3 col-sm-6">
                 <h4>Emergency </h4>
                 <ul className="list-unstyled">
                   <li>
@@ -41,14 +41,14 @@ Legon, Accra</a>
                   </li>
                   <li>
                     {" "}
-                    <a href="/">Long wauting period</a>
+                    <a href="/">Long waiting period</a>
                   </li>
                  
                 </ul>
               </div>
 
               {/* column  3*/}
-              <div className="col-md-4 col-sm-6">
+              <div className="col-md-3 col-sm-6">
                 <h4>Remarks </h4>
                 <ul className="list-unstyled">
                   <li>
@@ -79,9 +79,10 @@ Legon, Accra</a>
 }
 
 export default Footer;
+
 const FooterContainer = styled.footer`
   .footer-middle {
-    background: var(--mainDark);
+    background-color: var(--mainDark);
     padding-top: 3rem;
     color: var(--mainWhite);
   }
@@ -89,6 +90,7 @@ const FooterContainer = styled.footer`
     padding-top: 3rem;
     padding-bottom: 2rem;
     text-align: center;
+   
   }
   ul {
     list-style-type: none;
@@ -105,7 +107,7 @@ const FooterContainer = styled.footer`
     display: flex;
     justify-content: center;
   }
-  .col-md-4 {
+  .col-md-3{
     justify-content: space-around;
     width: 20%;
     text-align: center;

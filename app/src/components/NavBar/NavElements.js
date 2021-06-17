@@ -23,7 +23,7 @@ a {
 }
 
 &.active{
-    color:#FE4880
+    color:#010606
 
 }
 &:hover {
