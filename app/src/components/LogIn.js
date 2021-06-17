@@ -55,7 +55,8 @@ function LogIn(){
                 <div className="form-group">
                   <label>Password</label>
                   <input
-                    type="password"
+                
+                type="password"
                     value={password}
                     onChange={handlePasswordInput}
                   ></input>

@@ -41,7 +41,7 @@ Legon, Accra</a>
                   </li>
                   <li>
                     {" "}
-                    <a href="/">Long waiting period</a>
+                    <a href="/">Long Waiting period</a>
                   </li>
                  
                 </ul>
