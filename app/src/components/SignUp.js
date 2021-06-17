@@ -1,10 +1,11 @@
 import React, {useState} from "react";
+import { useHistory } from "react-router-dom";
 import LogIn from "./LogIn"
 import img from "../image/ug.jpg"
-// import axios from axios;
+import axios from "axios";
 
 function SignUp(){
-    
+   let history = useHistory();
     const [studentID, setStudentID] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -31,8 +32,29 @@ function SignUp(){
     };
   
     const handleSignedin = (event) => {
-      if (email === "abenabennett@gmail.com" && password === "0123" && confirmpswd==="0123" && studentID ==="10821976")
-        setSignedin(true);
+      event.preventDefault();
+      const newStudent = {
+        
+        studentID: studentID,
+
+        password: password,
+        confirmpswd: confirmpswd,
+      };
+      console.log(newStudent);
+      console.log("try again");
+      axios
+        .post("http://localhost:7000/signup", newStudent)
+  
+        .then((res) => {
+          console.log("success");
+          if (res.status === 200) {
+            localStorage.setItem("signedIn", true);
+            history.push("/login");
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+        });
      
     }
 
