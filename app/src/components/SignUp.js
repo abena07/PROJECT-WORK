@@ -13,8 +13,6 @@ function SignUp(){
     const [signedin, setSignedin] = useState(false);
 
   
-   
-  
     const handleStudentIdInput = (event) => {
       setStudentID(event.target.value);
     };
@@ -88,6 +86,7 @@ function SignUp(){
                     type="name"
                     value={studentID}
                     onChange={handleStudentIdInput}
+                    placeholder=" Student Id"
                   ></input>
                 </div>
     
@@ -97,6 +96,7 @@ function SignUp(){
                     type="email"
                     value={email}
                     onChange={handleEmailInput}
+                    placeholder ="example@gmail.com"
                   ></input>
                 </div>
     
@@ -106,6 +106,7 @@ function SignUp(){
                     type="password"
                     value={password}
                     onChange={handlePasswordInput}
+                    placeholder="password"
                   ></input>
                 </div>
     
@@ -115,6 +116,7 @@ function SignUp(){
                     type="password"
                     value={confirmpswd}
                     onChange={handleConfirmpswdInput}
+                    placeholder ="conform password"
                   ></input>
                 </div>
     
