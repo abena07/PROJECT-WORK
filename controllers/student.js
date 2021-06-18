@@ -4,7 +4,7 @@ const studentRouter = require("express").Router();
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const config = require("../helpers/config");
-//  hvdsh
+
 //to register a student
 studentRouter.post("/signup", function (request, response) {
   const studentID = request.body.studentID;
