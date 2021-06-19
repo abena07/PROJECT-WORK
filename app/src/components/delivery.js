@@ -1,5 +1,6 @@
 
 import React,{useState} from 'react';
+import img from "../image/ug.jpg"
 
 function Delivery() {
     const [item , setItem]= useState("");
@@ -51,6 +52,8 @@ function Delivery() {
                     </div>
                 </div>
             </form>
+
+            <img src ={img}  className ="center" alt ="ug" width="500" height="535"></img>
         </div>
     )
 }
