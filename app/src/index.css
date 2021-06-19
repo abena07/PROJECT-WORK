@@ -27,14 +27,14 @@ input,button{
 
 }
 
-form{
+/* form{
   display: block;
   position: absolute;
  padding: 30px;
-}
+} */
 
 
-form:after{
+/* form:after{
   content:'';
   display:block;
   position:absolute;
@@ -44,32 +44,44 @@ form:after{
   bottom:-5px;
   z-index:1;
   background-image:linear-gradient(to bottom right,#3455c2,#cf9d31)
+} */
+
+div.login-page {
+  background-image: url("./image/ug.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
-form .form-inner{
-  position: relative;
-  display:black;
-  background-color: #FFF;
-  padding: 30px;
-  z-index:2;
+form {
+  
+  padding: 30px 180px;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+  background-color: rgba(0, 0, 0, 0.4);
 
 }
-form .form-inner h2{
+
+
+form h2{
   color:#888;
   font-size: 28px;
   font-weight: 500;
   margin-bottom: 30px;
 }
 
-form .form-inner .form-group{
+form .form-group{
   display:block;
   width:300px;
   margin-bottom: 15px;
 
 }
 
-.form-inner .form-group label{
+.form-group label{
   display:block;
   color:#666;
   font-size:20px;
@@ -77,11 +89,11 @@ form .form-inner .form-group{
   transition: 0.4s;
 
 }
-.form-inner  .form-group:focus-within label{
+.form-group:focus-within label{
   color: #cf9d31;
 }
 
-form .form-inner .form-group input{
+form .form-group input{
   display:block;
   width: 100%;
   padding:10px 15px;
@@ -90,11 +102,11 @@ form .form-inner .form-group input{
   transition:0.4s;
 
 }
-form .form-inner .form-group input:focus{
+form .form-group input:focus{
   box-shadow:0px 0px 3px rgba(0, 0, 0, 0.9);
 }
 
-form .form-inner  .form-group button{
+form  .form-group button{
   display: inline-block;
   padding: 10px 15px;
   border-radius: 8px;
@@ -123,7 +135,7 @@ form .form-inner  .form-group button{
 
 }
 
-form .form-inner .form-group button:hover{
+form .form-group button:hover{
   background-position: 100% 0%;
 }
 

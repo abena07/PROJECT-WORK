@@ -29,15 +29,15 @@ function SignUp(){
       setConfirmpswd(event.target.value);
     };
   
-    const handleSignedin = (event) => {
+    const handleSignup = (event) => {
       event.preventDefault();
       const newStudent = {
-        
         studentID: studentID,
-
+        email: email,
         password: password,
-        confirmpswd: confirmpswd,
+        confirmpswd: confirmpswd
       };
+
       console.log(newStudent);
       console.log("try again");
       axios
@@ -72,7 +72,7 @@ function SignUp(){
               
             </>
           ) : (
-            <form>
+            <form onSubmit={handleSignup}>
               <div className="form-inner">
                 <h2>Sign Up</h2>
     
@@ -121,7 +121,7 @@ function SignUp(){
                 </div>
     
                 <div className="form-group">
-                  <button onClick={handleSignedin}>Sign Up</button>
+                  <button type="submit">Sign Up</button>
                 </div>
               </div>
             </form>

@@ -1,9 +1,11 @@
 import React, {useState} from "react";
 import Home from "./Home"
+import {useHistory} from "react-router-dom"
+import axios from "axios"
 import img from "../image/ug.jpg"
 
 function LogIn(){
-
+  let history = useHistory()
     const [studentID, setStudentID] = useState("");
     const [password, setPassword] = useState("");
     const [loggedIn, setLoggedIn] = useState(false);
@@ -18,8 +20,19 @@ function LogIn(){
     };
   
     const handleLoggedIn = (event) => {
-      if (studentID ==="10821976" && password === "0123")
-        setLoggedIn(true);
+      event.preventDefault();
+      axios.post("http://localhost:7000/login",{
+        studentID :studentID,
+        password:password,
+      }).then((res)=>{
+        if(res.status === 200){
+          localStorage.setItem("abenaDelivery@loggedIn", true);
+          history.push("/home")
+        }
+      }).catch((err)=>{
+        console.log(err)
+      })
+        
       
     }
   
@@ -29,16 +42,15 @@ function LogIn(){
       };
 
       return (
-        <div>
+        <>
           {loggedIn ? (
             <>
               <Home/>
               <button onClick={handleLoggedout}>Log Out </button>
             </>
           ) : (
-            <form>
-              
-              <div className="form-inner">
+            <div className="login-page">
+            <form onSubmit={handleLoggedIn}>
                 <h2>Log In</h2>
     
                 <div className="form-group">
@@ -63,14 +75,14 @@ function LogIn(){
                 </div>
     
                 <div className="form-group">
-                  <button onClick={handleLoggedIn}>Log In</button>
+                  <button type ="submit">Log In</button>
                 </div>
-              </div>
             </form>
+            </div>
           )}
-                    <img src ={img}  className ="center" alt ="ug"></img>
+                    {/* <img src ={img}  className ="center" alt ="ug"></img> */}
 
-        </div>
+        </>
       );
 }
 
