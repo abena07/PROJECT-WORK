@@ -7,7 +7,9 @@ import LogIn from "./components/LogIn"
 import Home from "./components/Home"
 import NavBar from "./components/NavBar"
 import AboutUs from "./components/AboutUs"
+import Delivery from "./components/Delivery";
 import Footer from "./components/Footer"
+
 
 
 function App() {
@@ -17,7 +19,7 @@ function App() {
       <NavBar/>
     <Switch>
         <Route path="/home" component={Home} />
-        {/* <Route path="/landing" component={Home} /> */}
+       <Route path ="/delivery" component ={Delivery}/>
         <Route path="/login" component={LogIn} />
         <Route path="/signup" component={SignUp} />
         <Route path="/about" component={AboutUs} />

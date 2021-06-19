@@ -116,7 +116,7 @@ function SignUp(){
                     type="password"
                     value={confirmpswd}
                     onChange={handleConfirmpswdInput}
-                    placeholder ="conform password"
+                    placeholder ="confirm password"
                   ></input>
                 </div>
     
