@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Home from "./Home"
 import {useHistory} from "react-router-dom"
 import axios from "axios"
-import img from "../image/ug.jpg"
+
 
 function LogIn(){
   let history = useHistory()
@@ -27,7 +27,7 @@ function LogIn(){
       }).then((res)=>{
         if(res.status === 200){
           localStorage.setItem("abenaDelivery@loggedIn", true);
-          history.push("/home")
+          history.push("/delivery")
         }
       }).catch((err)=>{
         console.log(err)
@@ -80,7 +80,7 @@ function LogIn(){
             </form>
             </div>
           )}
-                    {/* <img src ={img}  className ="center" alt ="ug"></img> */}
+                  
 
         </>
       );

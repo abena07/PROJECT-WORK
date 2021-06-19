@@ -1,60 +1,102 @@
 
 import React,{useState} from 'react';
-import img from "../image/ug.jpg"
+
 
 function Delivery() {
-    const [item , setItem]= useState("");
-    const[ itemno , setItemno] = useState("");
-    const[location, setLocation]= useState("")
-    const[ destination ,setDestination]=useState("")
+    const [packageName , setPackageName]= useState("");
+    const[ itemsNumber, setItemsNumber] = useState("");
+    const[itemLocation, setItemLocation]= useState("")
+    const [ holderName , setHolderName]= useState("")
+    const[holderContact , setHolderContact]= useState("")
+    const[ destinationLocation ,setDestinationLocation]=useState("")
+    const[ destinationHolderName ,setDestinationHolderName]=useState("")
+    const[ destinationHolderContact ,setDestinationHolderContact]=useState("")
 
-    const handleItemInput = (event) =>{
-        setItem(event.target.value);
+    const handlePackageInput = (event) =>{
+        setPackageName(event.target.value);
     }
 
-    const handleItemnoInput = (event) =>{
-        setItemno(event.target.value);
+    const handleItemsNumberInput = (event) =>{
+        setItemsNumber(event.target.value);
     }
 
-    const handleLocation =(event) =>{
-        setLocation(event.target.value);
+    const handleItemLocation =(event) =>{
+        setItemLocation(event.target.value);
     }
-     const handleDestination = (event) =>{
-         setDestination(event.target.value);
+     const hadleHolderName = (event)=>{
+         setHolderName(event.target.value)
+     }
+     const handleHolderContact =(event)=>{
+         setHolderContact(event.target.value)
+     }
+     const handleDestinationLocation =(event)=>{
+         setDestinationLocation(event.target.value)
+     }
+
+     const handleDestinationHolderContact =(event)=>{
+         setDestinationHolderContact(event.target.value)
+     }
+
+     const handleDestinationHolderName = (event) =>{
+         setDestinationHolderName(event.target.value);
      }
 
     return (
-        <div>
+    
+        <div className="login-page">
+        
             <form>
-                <div className ="form-inner ">
+                
                     <h2>Place A Delivery</h2>
-                   
+                    <div className =" sub-entry">
                    <div className ="form-group">
-                       <label> Item</label>
-                       <input type ="name" value ={item} onchange={handleItemInput}></input>
+                       <label> Package Name</label>
+                       <input type ="name" value ={packageName} onchange={handlePackageInput}></input>
                    </div>
 
                    <div className ="form-group">
-                        <label>Item Number</label>
-                        <input type ="number" value ={itemno}
-                        onChange={handleItemnoInput}></input>
+                        <label>Items Number</label>
+                        <input type ="number" value ={itemsNumber}
+                        onChange={handleItemsNumberInput}></input>
                    </div>
                    
                    <div className ="form-group">
-                       <label>Location</label>
-                       <input type ="location" value ={location}
-                       onChange = {handleLocation}></input>
+                       <label>Item Location</label>
+                       <input type ="location" value ={itemLocation}
+                       onChange = {handleItemLocation}></input>
                    </div>
+
+                   <div className ="form-group">
+                        <label> Holder Name</label>
+                        <input type ="destination" value ={holderName} onChange ={hadleHolderName}></input>
+                    </div>
+                       </div>
+                       <div className ="sub-entry"> 
+                    <div className ="form-group">
+                        <label> Holder Contact</label>
+                        <input type ="destination" value ={holderContact} onChange ={handleHolderContact}></input>
+                    </div>
 
                     <div className ="form-group">
-                        <label> Destination</label>
-                        <input type ="destination" value ={destination} onChange ={handleDestination}></input>
+                        <label> Destination </label>
+                        <input type ="destination" value ={destinationLocation} onChange ={handleDestinationLocation}></input>
                     </div>
-                </div>
+
+                    <div className ="form-group">
+                        <label> Destination Holder Name</label>
+                        <input type ="destination" value ={destinationHolderName} onChange ={handleDestinationHolderName}></input>
+                    </div>
+
+                    <div className ="form-group">
+                        <label> Destination Holder Contact</label>
+                        <input type ="destination" value ={destinationHolderContact} onChange ={handleDestinationHolderContact}></input>
+                    </div>
+              </div>
             </form>
 
-            <img src ={img}  className ="center" alt ="ug" width="500" height="535"></img>
+            
         </div>
+      
     )
 }
 

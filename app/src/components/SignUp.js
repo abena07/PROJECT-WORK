@@ -61,7 +61,7 @@ function SignUp(){
       };
 
       return (
-        <div>
+        <>
           {signedin ? (
             <>
               <LogIn/>
@@ -72,8 +72,9 @@ function SignUp(){
               
             </>
           ) : (
+            <div className="login-page">
             <form onSubmit={handleSignup}>
-              <div className="form-inner">
+             
                 <h2>Sign Up</h2>
     
                
@@ -123,13 +124,13 @@ function SignUp(){
                 <div className="form-group">
                   <button type="submit">Sign Up</button>
                 </div>
-              </div>
+              
             </form>
-
+            </div>
           )}
           
-          <img src ={img}  className ="center" alt ="ug" width="500" height="535"></img>
-        </div>
+       
+        </>
       );
 
 }

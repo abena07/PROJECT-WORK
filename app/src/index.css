@@ -57,7 +57,11 @@ div.login-page {
   align-items: center;
 }
 
-
+div.sub-entry {
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
 form {
   
   padding: 30px 180px;
@@ -68,7 +72,7 @@ form {
 
 
 form h2{
-  color:#888;
+  color:#FFF;
   font-size: 28px;
   font-weight: 500;
   margin-bottom: 30px;
@@ -83,7 +87,7 @@ form .form-group{
 
 .form-group label{
   display:block;
-  color:#666;
+  color:#fff;
   font-size:20px;
   margin-bottom:5px;
   transition: 0.4s;
