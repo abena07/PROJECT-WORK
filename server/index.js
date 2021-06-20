@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const studentRouter = require("./controllers/student");
+const deliveryRouter = require("./controllers/delivery");
 const config = require("./helpers/config");
 const cors = require("cors");
 // const authenticateStudent = require("./middleware/auth")
@@ -27,6 +28,7 @@ mongoose
   });
 
 app.use(studentRouter);
+app.use(deliveryRouter);
 
 // Middlewares
 /**

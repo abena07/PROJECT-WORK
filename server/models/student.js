@@ -7,6 +7,7 @@ const studentSchema = new mongoose.Schema({
   studentID: {
     type: Number,
     required: true,
+    unique: true
   },
 
  
@@ -19,6 +20,11 @@ const studentSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+
+  email: {
+    type: String,
+    required: true
+  }
 
   // lastLogin:{
   //     type:Date

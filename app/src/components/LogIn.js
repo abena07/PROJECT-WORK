@@ -77,6 +77,7 @@ function LogIn(){
                 <div className="form-group">
                   <button type ="submit">Log In</button>
                 </div>
+                
             </form>
             </div>
           )}

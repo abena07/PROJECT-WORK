@@ -1,4 +1,4 @@
-  
+   
 const Student = require("../models/student");
 const studentRouter = require("express").Router();
 const bcrypt = require("bcrypt");
@@ -26,7 +26,7 @@ studentRouter.post("/signup", function (request, response) {
       return response.status(500).send();
     }
     console.log(savedStudent);
-    return response.status(200).send();
+    return response.status(200).send(savedStudent);
   });
 });
 
@@ -40,15 +40,19 @@ studentRouter.post("/login", function (request, response, next) {
 
 
   Student.findOne(
-    { studentID: studentID, password: password, },
+    { studentID: studentID },
     function (err, student) {
       if (err) {
         console.log(err);
         return response.staus(500).send();
       }
       if (!student) {
-        return response.status(404).send();
+        return response.status(401).send({"error": "Invalid username or password"});
       }
+
+      bcrypt.compare("B4c0/\/", password, function(err, res) {
+        if (err) return response.status(401).send({"error": "Invalid username or password"});
+      });
 
       return response.status(200).send("good");
     }

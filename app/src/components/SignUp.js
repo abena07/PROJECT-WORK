@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import { useHistory } from "react-router-dom";
 import LogIn from "./LogIn"
-import img from "../image/ug.jpg"
 import axios from "axios";
 
 function SignUp(){
@@ -124,6 +123,8 @@ function SignUp(){
                 <div className="form-group">
                   <button type="submit">Sign Up</button>
                 </div>
+
+                
               
             </form>
             </div>
