@@ -2,8 +2,11 @@ import React from 'react';
 import '../App.css';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import MapboxDirections from '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions'
-import '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions.css'
+import MapboxDirections from '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions';
+import '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import CarouselContainer from './CarouselContainer';
+
 
 
 mapboxgl.accessToken = "pk.eyJ1IjoibGVzcm9uaWUiLCJhIjoiY2twcHQxanczMHFteTJwbW5mNTJrNGx4dSJ9.PasoedOsW4f0elCegkS_8w"
@@ -20,8 +23,7 @@ class Home extends React.Component {
 
         const directions = new MapboxDirections({
             accessToken: mapboxgl.accessToken,
-            unit: 'metric',
-            profile: 'mapbox/driving'
+            
         })
 
         map.addControl(directions, 'top-left');
@@ -29,15 +31,18 @@ class Home extends React.Component {
     render() {
       return (
         <>
+        <div className="homepage">
+         <CarouselContainer/>
+        </div>
         <div 
             ref={el => (this.mapWrapper = el)} 
             className="mapWrapper" 
+          
         />
-        </>
+       </>
+
       );
-      <div className="images">
-        <img src="/image/assignment img.jpg" alt="assignment image"></img>
-      </div>
+      
     }
 }
 

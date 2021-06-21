@@ -42,11 +42,35 @@
 }
 .main-footer{
   border: thin;
-  background-color:rgb(117, 117, 236);
+  background-color:rgb(38, 38, 104);
+  color: antiquewhite;
   
 
 }
 .center{
   width: 100%;
   height: auto;
+}
+#profile{
+  background-color: rgb(15, 15, 61);
+  color: white;
+  display: table;
+  margin: left 20px;
+  
+}
+#about{
+  background-image: -webkit-image-set();
+  background-repeat: no-repeat    ;
+}
+#vision{
+  background-color: rgb(15, 15, 61);
+  color: white;
+  display: table;
+  margin-top: 0px;
+}
+#mission{
+  background-color: rgb(15, 15, 61);
+  color: white;
+  display: table;
+  margin-top: 0px;
 }

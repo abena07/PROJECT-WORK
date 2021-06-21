@@ -21,10 +21,10 @@ Legon, Accra</a>
                   </li>
                   <li>
                     {" "}
-                    <a href="/">+233-(0)302-213820</a>
+                    <a href="tel:{+233302213820}">+233-(0)302-213820</a>
                   </li>
                   <li>
-                    <a href="/">+233-(0)302-213850</a>
+                    <a href="tel:{+233302213850}">+233-(0)302-213850</a>
                   </li>
                 </ul>
               </div>
@@ -52,7 +52,7 @@ Legon, Accra</a>
                 <h4>Remarks </h4>
                 <ul className="list-unstyled">
                   <li>
-                    <a href="/"> Via Mail</a>
+                    <a href="mailto:{pad@ug.edu.gh}?{subject}&body={cotent}"> Via Mail</a>
                   </li>
                   <li>
                     <a href="/"> Via Phone</a>
