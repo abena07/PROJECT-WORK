@@ -1,8 +1,8 @@
 
 import React from "react";
 import {Carousel} from "react-bootstrap";
-import assignment from "../image/assignment.jpg";
-import errand2 from "../image/errand.jpg";
+import assignment from "../image/assign.jpeg";
+import errand2 from "../image/errand.jpeg";
 import food1 from "../image/Food.jpg";
 
 const CarouselContainer=()=>{
@@ -10,7 +10,7 @@ const CarouselContainer=()=>{
         <Carousel>
   <Carousel.Item>
     <img
-      className="d-block w-100"
+      className="d-block w-80"
       src={assignment}
       alt="First slide"
     />
@@ -28,7 +28,7 @@ const CarouselContainer=()=>{
 
     <Carousel.Caption>
       <h3>Too Busy to run errands?</h3>
-      <p>We have available delivery mem just for you!</p>
+      <p>We have available delivery men just for you!</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>

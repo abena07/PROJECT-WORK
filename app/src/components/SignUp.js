@@ -71,7 +71,7 @@ function SignUp(){
               
             </>
           ) : (
-            <div className="login-page">
+            <div className="signup-page">
             <form onSubmit={handleSignup}>
              
                 <h2>Sign Up</h2>

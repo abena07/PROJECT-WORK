@@ -68,7 +68,7 @@ function Delivery() {
 
     return (
     
-        <div className="login-page">
+        <div className="delivery-page">
         
             <form onSubmit={handleSend}>
                 

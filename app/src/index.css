@@ -56,6 +56,28 @@ div.login-page {
   justify-content: center;
   align-items: center;
 }
+div.signup-page {
+  background-image: url("./image/Legonvhvh.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.delivery-page {
+  background-image: url("./image/Door.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 div.sub-entry {
   width: 50%;

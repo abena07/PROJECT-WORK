@@ -54,23 +54,48 @@
 #profile{
   background-color: rgb(15, 15, 61);
   color: white;
-  display: table;
-  margin: left 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 2px;
+  padding: 30px 30px;
+  border-radius: 25px;
+  font-size: 30px;
+
   
 }
 #about{
   background-image: -webkit-image-set();
   background-repeat: no-repeat    ;
+  justify-content: center;
+  align-items: center;
+  
 }
 #vision{
   background-color: rgb(15, 15, 61);
   color: white;
-  display: table;
-  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 2px;
+  padding: 30px 30px;
+  border-radius: 25px;
+  font-size: 30px;
+
 }
 #mission{
   background-color: rgb(15, 15, 61);
   color: white;
-  display: table;
-  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 2px;
+  padding: 30px 30px;
+  border-radius: 25px;
+  font-size: 30px;
+
+
 }
