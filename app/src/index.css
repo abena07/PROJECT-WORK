@@ -67,11 +67,11 @@ div.signup-page {
   align-items: center;
 }
 div.delivery-page {
-  background-image: url("./image/Door.jpg");
+  background-image: url("./image/d.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0 0;
-  height: 100vh;
+  height: 120vh;
   display: flex;
   justify-content: center;
   align-items: center;

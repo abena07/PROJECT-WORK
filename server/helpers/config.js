@@ -24,8 +24,6 @@ switch (NODE_ENV) {
 
 const JWT_SECRET = process.env.JWT_SECRET
 
-
-
 module.exports = {
     PORT,
     NODE_ENV,
